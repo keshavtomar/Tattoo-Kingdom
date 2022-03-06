@@ -16,19 +16,19 @@ title{
     display: flex;
     align-items: center;
     margin-left: 15px;
-    height: 100px;
     font-size: 40px;
     color: darkred;
 }
 
 #logo img{
-    height: 150px;
+    height: 50px;
     filter: invert(1);
 }
 
 
 /* navbar styling,   Caution: don't touch */
 .navbar {
+    padding: 0;
     color: #fff;
     text-align: center;
     font-family: 'Akaya Telivigala', cursive;
@@ -42,9 +42,8 @@ title{
   }
   
 .nav-item:hover{
-    text-decoration: overline;
+    text-decoration: underline;
 }
-
 
 
 #welcomesection{
