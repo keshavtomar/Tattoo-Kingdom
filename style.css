@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Baloo+Bhaijaan+2&family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Baloo+Bhaijaan+2&family=Comforter&family=Festive&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    line-height: 0.8rem;
+}
+title{
+    font-weight: bold;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    height: 100px;
+    font-size: 40px;
+    color: darkred;
+}
+
+#logo img{
+    height: 150px;
+    filter: invert(1);
+}
+
+
+/* navbar styling,   Caution: don't touch */
+.navbar {
+    color: #fff;
+    text-align: center;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 1.5rem;
+  }
+
+  .brand-name{
+      font-size: 3rem;
+      padding-left: 1rem;
+      color:darkred;
+  }
+  
+.nav-item:hover{
+    text-decoration: overline;
+}
+
+
+
+#welcomesection{
+    background: center/cover no-repeat url("images/welcome.jpg");
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  height: 450px;
+  width: 100%;
+  background-color: red;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 50px;
+}
+
+#introSection{
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    background: center/cover no-repeat url("images/tattoin.jpg");
+  height: 420px;
+  width: 100%;
+  background-color: red;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 72px;
+}
+#introsecond{
+    background: center/cover no-repeat url("images/tto.jpg");
+    height: 500px;
+    opacity: 0.9;
+    font-family: 'Akaya Telivigala', cursive;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-size: 72px;
+
+}
+#sponsorsection{
+    background-color: darkred;
+    height: 200px;
+}
+#makersection{
+    background: url("images/rohit-raj-t54DqgOiIl4-unsplash.jpg");
+   font-family: 'Akaya Telivigala', cursive;
+  text-align: center;  
+  height: 350px;  
+  
+}
+
+.artist-card{
+    text-align: left;
+    font-family: 'Akaya Telivigala', cursive;
+
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 12px;
+    height: 260px;
+    width: 30%;
+
+}
+#makersection h2{
+    font-size: 40px;
+}
+
+.artist-card p{
+    font-size: 32px;
+    padding: 10px 22px;
+
+}
+
+#sponsors{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 34px;
+    height: 120px;
+    max-width: 1000px;
+    margin: 27px auto;
+
+}
+.spimage{
+    height: 100%;
+    margin: 15px 34px;
+    justify-content: center;
+}
+
+#footer{
+    color: white;
+    background-color: black;
+    height: 45px;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
