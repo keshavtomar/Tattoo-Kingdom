@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Baloo+Bhaijaan+2&family=Comforter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Baloo+Bhaijaan+2&family=Comforter&family=Festive&display=swap');
-*{
-    margin: 0px;
-    box-sizing: border-box;
-    padding: 0;
-}
 
 body{
     line-height: 0.8rem;
+    background-color: black;
 }
 title{
     font-weight: bold;
@@ -38,7 +34,7 @@ title{
   .brand-name{
       font-size: 3rem;
       padding-left: 1rem;
-      color:darkred;
+      color: white;
   }
   
 .nav-item:hover{
@@ -48,6 +44,8 @@ title{
 
 #welcomesection{
     background: center/cover no-repeat url("images/welcome.jpg");
+
+    margin: 0;
     
     display:flex;
     flex-direction: column;
@@ -59,62 +57,48 @@ title{
   font-size: 50px;
 }
 
-#introSection{
-    color: white;
-    display:flex;
-    flex-direction: column;
-    justify-content: left;
-    background: center/cover no-repeat url("images/tattoin.jpg");
-  height: 420px;
-  width: 100%;
-  background-color: red;
-  font-family: 'Akaya Telivigala', cursive;
-  font-size: 72px;
+.stquote{
+    padding-top:60px;
 }
-#introsecond{
-    background: center/cover no-repeat url("images/tto.jpg");
-    height: 500px;
-    opacity: 0.9;
-    font-family: 'Akaya Telivigala', cursive;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    font-size: 72px;
 
+@media (min-width:800px) {                    /*to apply it only in large screen sizes*/
+    .quote:hover{
+        font-size: 45px;
+   }
 }
+
+#makersection{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.card-img-top{
+    width: 40%;
+    text-align: center;
+}
+
+.card-body{
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.card-title{
+    font-size: xx-large;
+}
+
+.col{
+    text-align: center;
+}
+
 #sponsorsection{
     background-color: darkred;
     height: 200px;
 }
-#makersection{
-    background: url("images/rohit-raj-t54DqgOiIl4-unsplash.jpg");
-   font-family: 'Akaya Telivigala', cursive;
-  text-align: center;  
-  height: 350px;  
-  
-}
 
-.artist-card{
-    text-align: left;
-    font-family: 'Akaya Telivigala', cursive;
-
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 12px;
-    height: 260px;
-    width: 30%;
-
-}
 #makersection h2{
     font-size: 40px;
 }
 
-.artist-card p{
-    font-size: 32px;
-    padding: 10px 22px;
-
-}
 
 #sponsors{
     text-align: center;
@@ -133,6 +117,8 @@ title{
 
 #footer{
     color: white;
+    padding: 4%;
+    text-align: center;
     background-color: black;
     height: 45px;
     font-size: 24px;
