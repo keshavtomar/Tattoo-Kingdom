@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Baloo+Bhaijaan+2&family=Comforter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Baloo+Bhaijaan+2&family=Comforter&family=Festive&display=swap');
 
+*{
+    font-family: 'Akaya Telivigala', cursive;
+}
+
 body{
     line-height: 0.8rem;
     background-color: #1B1A17;
 }
+
 title{
     font-weight: bold;
 }
+
 #logo{
     display: flex;
     align-items: center;
@@ -27,7 +33,6 @@ title{
     padding: 0;
     color: #fff;
     text-align: center;
-    font-family: 'Akaya Telivigala', cursive;
     font-size: 1.5rem;
   }
 
@@ -53,7 +58,6 @@ title{
   height: 450px;
   width: 100%;
   background-color: #E6D5B8;
-  font-family: 'Akaya Telivigala', cursive;
   font-size: 50px;
 }
 
@@ -68,7 +72,6 @@ title{
 }
 
 #makersection{
-    font-family: 'Akaya Telivigala', cursive;
     text-align: center;
     color: white;
     background-color: #1B1A17;
@@ -92,13 +95,35 @@ title{
     background-color: #E6D5B8;
 }
 
-#sponsorsection{
-    background-color: #E6D5B8;
-    height: 200px;
+.reviews{
+    text-align: center;
+    color: white;
+    padding: 4% 7%;
 }
 
-#makersection h2{
-    font-size: 40px;
+.review-pic{
+    width:6%;
+}
+
+.review{
+    line-height: 1.4rem;
+}
+
+
+
+#sponsorsection{
+    background-color: #E6D5B8;
+}
+
+.sponsor-img{
+    width: inherit;
+}
+
+@media (min-width:600px) {
+    .sponsor-img{
+    width: 100px;
+    height: 100px;
+    }
 }
 
 
@@ -120,9 +145,9 @@ title{
 #footer{
     color: white;
     padding: 4%;
+    line-height: 1.5rem;
     text-align: center;
     background-color: #1B1A17;
     height: 45px;
     font-size: 24px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
