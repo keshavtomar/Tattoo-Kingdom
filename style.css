@@ -3,7 +3,7 @@
 
 body{
     line-height: 0.8rem;
-    background-color: black;
+    background-color: #1B1A17;
 }
 title{
     font-weight: bold;
@@ -13,7 +13,7 @@ title{
     align-items: center;
     margin-left: 15px;
     font-size: 40px;
-    color: darkred;
+    color: #E6D5B8;
 }
 
 #logo img{
@@ -52,7 +52,7 @@ title{
     justify-content: center;
   height: 450px;
   width: 100%;
-  background-color: red;
+  background-color: #E6D5B8;
   font-family: 'Akaya Telivigala', cursive;
   font-size: 50px;
 }
@@ -68,9 +68,10 @@ title{
 }
 
 #makersection{
+    font-family: 'Akaya Telivigala', cursive;
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: #1B1A17;
 }
 
 .card-img-top{
@@ -78,9 +79,6 @@ title{
     text-align: center;
 }
 
-.card-body{
-    font-family: 'Akaya Telivigala', cursive;
-}
 
 .card-title{
     font-size: xx-large;
@@ -90,8 +88,12 @@ title{
     text-align: center;
 }
 
+.cta{
+    background-color: #E6D5B8;
+}
+
 #sponsorsection{
-    background-color: darkred;
+    background-color: #E6D5B8;
     height: 200px;
 }
 
@@ -119,7 +121,7 @@ title{
     color: white;
     padding: 4%;
     text-align: center;
-    background-color: black;
+    background-color: #1B1A17;
     height: 45px;
     font-size: 24px;
     font-family: Georgia, 'Times New Roman', Times, serif;
