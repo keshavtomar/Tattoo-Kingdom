@@ -1,52 +1,70 @@
-h1{
-  background-color: #1B1A17;
+* {
+  font-family: "Akaya Telivigala", cursive;
+}
+
+#quick-controls{
+  z-index: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  background-color: #1b1a17;
   color: white;
   border-style: none;
   text-align: center;
-  font: 3em "Fira Sans", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
 }
 h2 {
-  background-color: #1B1A17;
+  background-color: #1b1a17;
   color: white;
   border-style: none;
   text-align: center;
-  font: 2em "Fira Sans", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.bodydiv { background-color: #E6D5B8;
-  font: 1em "Fira Sans", sans-serif;
+.bodydiv {
+  background-color: #e6d5b8;
   padding-left: 90px;
 }
-.footer{
+
+.footer {
   text-align: center;
 }
-input[type=text], input[type=tel], input[type=email]
-{ padding: 12px 20px;
-  background-color: #ECECEC;
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  padding: 12px 20px;
+  background-color: #ececec;
   margin: 2px;
 }
-textarea{
-  background-color: #ECECEC;
+
+textarea {
+  background-color: #ececec;
 }
-input[type=submit]
-{
-  background-color: #1B1A17;
+
+input[type="submit"] {
+  background-color: #1b1a17;
   border: none;
   color: white;
   padding: 16px 32px;
   margin: 4px 0;
   cursor: pointer;
 }
-.reach-us{
+
+.reach-us {
   height: 100px;
-  background-color: #E6D5B8;
-  font: 1.1em "Fira Sans", sans-serif;
+  background-color: #e6d5b8;
 }
+
 .table {
   margin-left: auto;
   margin-right: auto;
 }
+
+
