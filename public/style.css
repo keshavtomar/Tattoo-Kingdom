@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Baloo+Bhaijaan+2&family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Baloo+Bhaijaan+2&family=Comforter&family=Festive&display=swap');
+
+*{
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+body{
+    line-height: 0.8rem;
+    background-color: #1B1A17;
+}
+
+title{
+    font-weight: bold;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 40px;
+    color: #E6D5B8;
+}
+
+#logo img{
+    height: 50px;
+    filter: invert(1);
+}
+
+
+/* navbar styling,   Caution: don't touch */
+.navbar {
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .brand-name{
+      font-size: 3rem;
+      padding-left: 1rem;
+      color: white;
+  }
+  
+.nav-item:hover{
+    text-decoration: underline;
+}
+
+
+#welcomesection{
+    background: center/cover no-repeat url("images/welcome.jpg");
+
+    margin: 0;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  height: 450px;
+  width: 100%;
+  background-color: #E6D5B8;
+  font-size: 50px;
+}
+
+.quote{
+    text-shadow: 3px 0 white;
+}
+
+
+.stquote{
+    padding-top:60px;
+}
+
+@media (min-width:800px) {                    /*to apply it only in large screen sizes*/
+    .quote:hover{
+        font-size: 45px;
+   }
+}
+
+#makersection{
+    text-align: center;
+    color: white;
+    background-color: #1B1A17;
+}
+
+.card-img-top{
+    width: 40%;
+    text-align: center;
+}
+
+
+.card-title{
+    font-size: xx-large;
+}
+
+.col{
+    text-align: center;
+}
+
+.cta{
+    background-color: #E6D5B8;
+}
+
+.reviews{
+    text-align: center;
+    color: white;
+    padding: 4% 7%;
+}
+
+.review-pic{
+    width:6%;
+}
+
+.review{
+    line-height: 1.4rem;
+}
+
+
+
+#sponsorsection{
+    background-color: #E6D5B8;
+}
+
+.sponsor-img{
+    width: inherit;
+}
+
+@media (min-width:600px) {
+    .sponsor-img{
+    width: 100px;
+    height: 100px;
+    }
+}
+
+
+#sponsors{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 34px;
+    height: 120px;
+    max-width: 1000px;
+    margin: 27px auto;
+
+}
+.spimage{
+    height: 100%;
+    margin: 15px 34px;
+    justify-content: center;
+}
+
+#footer{
+    color: white;
+    padding: 4%;
+    line-height: 1.5rem;
+    text-align: center;
+    background-color: #1B1A17;
+    height: 45px;
+    font-size: 24px;
+}
