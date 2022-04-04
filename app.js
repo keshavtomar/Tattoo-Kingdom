@@ -17,9 +17,17 @@ app.use(express.static(publicDirectory));
 
 app.use(express.json());         // now it parse JSON data too.
 
+
+const connectdb = require('./config/db.js');
+const { dirname } = require('path');
+connectdb();
+
+
+
+
 //  define routes
 app.use('/', require('./routes/pages'));
-
+app.use('/form', require('./routes/upload'));
 
 
 const PORT = process.env.PORT || 3005;
