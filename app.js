@@ -10,9 +10,9 @@ app.use(express.urlencoded({ extended:true }));
 // app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'hbs');
 // const imgDirectory = path.join(__dirname, './public/img')
-const publicDirectory = path.join(__dirname, './public');  
+const publicDirectory = path.join(__dirname, './public');
 // app.use(express.static(imgDirectory));
-app.use(express.static(publicDirectory));  
+app.use(express.static(publicDirectory));
 
 
 app.use(express.json());         // now it parse JSON data too.
