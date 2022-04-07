@@ -4,6 +4,8 @@ const path = require('path');
 const mysql = require('mysql');
 // const connectdb = require('../config/db.js');
 
+const app=express();
+
 
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
@@ -31,12 +33,14 @@ router.post('/appoint', (req, res)=>{
         }
         else{
             console.log(results);
-            res.redirect('/');
+            res.render("success");
         }
     })
 
-    
+
 })
+
+
 
 
 module.exports = router;

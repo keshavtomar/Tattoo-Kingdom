@@ -6,9 +6,8 @@ const path = require('path');
 
 
 router.get('/', (req, res)=>{
-    res.render('index');   
+    res.render('index');
 })
-
 
 router.get('/contactus', (req, res)=>{
     res.render('contactus');
@@ -20,6 +19,10 @@ router.get('/form', (req,res)=>{
 
 router.get('/artists', (req,res)=>{
     res.render('artists');
+})
+
+router.get('/home', (req,res)=>{
+  res.render('index');
 })
 
 module.exports = router;
