@@ -1,11 +1,11 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const path = require('path');
-
+const cookieParser = require('cookie-parser');
 dotenv.config({ path: './.env'});
 
 const app = express();
-
+app.use(cookieParser());
 app.use(express.urlencoded({ extended:true }));
 // app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'hbs');
@@ -28,6 +28,11 @@ connectdb();
 //  define routes
 app.use('/', require('./routes/pages'));
 app.use('/form', require('./routes/upload'));
+app.use('/auth', require('./routes/auth'));
+app.use('/admin', require('./routes/administration'));
+app.get('/artists',(req,res)=>{
+    res.render('artists');
+})
 
 
 const PORT = process.env.PORT || 3005;

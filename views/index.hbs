@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tattoo Kingdom</title>
-  <link rel="icon" href="images/tk.png" />
+  <link rel="icon" href="/images/tk.png" />
 
   <!-- stylesheet added, and bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style.css" />
 
   <!-- my fontawesome kit code -->
   <script src="https://kit.fontawesome.com/c94318ebe5.js" crossorigin="anonymous"></script>
@@ -52,6 +52,15 @@
           <li class="nav-item px-1">
             <a class="nav-link active" target="_blank" href="https://www.instagram.com/theroguetattoos/">Gallery</a>
           </li>
+          <li class="nav-item px-1"><a class="nav-link active" href="/admin/login">Admin</a></li>
+          {{!-- <li class="nav-item px-1"><a class="nav-link active" href="/check">Artist</a></li> --}}
+          {{#if user}}
+          <li class="nav-item px-1"><a class="nav-link active" href="/auth/logout">Logout</a></li>
+          <li class="nav-link active">Hello {{user}}</li>
+          {{else}}
+          <li class="nav-item px-1"><a class="nav-link active" href="/check">Login</a></li>
+          <li class="nav-item px-1"><a class="nav-link active" href="/register">New User</a></li>
+          {{/if}}
         </ul>
       </div>
   </nav>
@@ -127,26 +136,35 @@
   <!-- carousel using bootstrap  -->
   <section class="reviews" id=reviews">
 
-    <h3 style="margin-bottom: 45px;"><i class="fa-solid fa-grip-lines-vertical"></i>  What they say about Us  <i class="fa-solid fa-grip-lines-vertical"></i></h3>
+    <h3 style="margin-bottom: 45px;"><i class="fa-solid fa-grip-lines-vertical"></i> What they say about Us <i
+        class="fa-solid fa-grip-lines-vertical"></i></h3>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000" keyboard="false">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000"
+      keyboard="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <p class="review">Some guy literally asked me where I got it from!.. it's already 6-7 months and it's still good.<br> For their service I just have something to say they are the best</p>
-          <img class="review-pic" src="images/reviews/allef-vinicius-AlDYIRJ5Upk-unsplash-modified.png" alt="dog-profile">
+          <p class="review">Some guy literally asked me where I got it from!.. it's already 6-7 months and it's still
+            good.<br> For their service I just have something to say they are the best</p>
+          <img class="review-pic" src="images/reviews/allef-vinicius-AlDYIRJ5Upk-unsplash-modified.png"
+            alt="dog-profile">
           <em>Pebbles, New York</em>
         </div>
         <div class="carousel-item">
-          <p class="review">I'm very thankful to my friend Abdullah who suggested me for Tattoo kingdom...They have wonderful template for tattoo<br> and very experienced artists.I was in US last year...But there too I didn't get such awesome service</p>
-          <img class="review-pic" src="images/reviews/norbert-buduczki-dUP2G2ZxvNA-unsplash-modified.png" alt="lady-profile">
+          <p class="review">I'm very thankful to my friend Abdullah who suggested me for Tattoo kingdom...They have
+            wonderful template for tattoo<br> and very experienced artists.I was in US last year...But there too I
+            didn't get such awesome service</p>
+          <img class="review-pic" src="images/reviews/norbert-buduczki-dUP2G2ZxvNA-unsplash-modified.png"
+            alt="lady-profile">
           <em>Beverly, Illinois</em>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
